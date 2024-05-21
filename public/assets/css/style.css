@@ -175,14 +175,15 @@ main div h1 {
     background-color: #93A25A;
     font-family: "Lato", sans-serif;
     height: 2.5em;
-    width: 12em;
-    border: solid #93A25A;
+    width: 100px;
+    border: solid 2px #93A25A;
+    font-weight: bold;
 }
 
 .button-contact:hover {
-    background-color: #FFFFFF;
-    color: #93A25A;
-    border: solid #93A25A;
+    background-color: #535c34;
+    color: #ffffff;
+    border: solid 2px #93A25A;
 }
 
 main div h2 {
@@ -205,6 +206,95 @@ main div h2 {
 
 .profilRate {
     width: 100%;
+}
+
+/* ------------ Calendar page Anthony   ------------ */
+
+.days {
+    width: 45vw;
+}
+.calendar-top{
+    width: 100vw;
+}
+
+.box {
+    border: solid black 1px;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin: 5px 0px 5px 0px;
+    font-weight: bold;
+}
+
+.week-end{
+    background-color: #d4853ca1;
+}
+
+.calender-container {
+    max-width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    border: 1px solid #484b25;
+    border-radius: 25px;
+    padding: 10px;
+    justify-content: center;
+    /* width: 100vw; */
+    width: 70%;
+    margin: 0 auto;
+    background-color: #92a35a;
+
+}
+
+.day-header {
+    border: 1px solid #484b25;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    background-color: #d68233;
+    color: rgb(0, 0, 0);
+}
+
+.dayNumber {
+    border: 1px solid #484b25;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ffffff;
+    transition: 0.2s ease;
+}
+
+.dayNumber:hover{
+    background-color: #ffc38c;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+/* show the current day with other colors */
+.current-day {
+    background-color: #d68233;
+    color: #000000;
+}
+
+.current-day:hover {
+    background-color: #a8601d;
+}
+
+.off {
+    background-color: #92a35a;
+}
+
+.maj {
+    text-transform: capitalize
 }
 
 /* ------------ Home Page Fred   ------------ */

@@ -28,7 +28,7 @@ class NavbarEffect {
 
 let navbarEffect = new NavbarEffect();
 
-// map ---------------------------- 
+// MAP ---------------------------- 
 
 let map;
 
@@ -120,3 +120,36 @@ async function searchCityAndDisplay() {
     }
     document.getElementById("loading-spinner").classList.add("hidden");
 };
+
+
+// Calendar button switch months
+document.getElementById('prevButton').addEventListener('click', function() {
+    if (month === 1) {
+        month = 12;
+        year--;
+    } else {
+        month--;
+    }
+
+    window.location.href = `?mois=${month}&annee=${year}`;
+});
+
+document.getElementById('nextButton').addEventListener('click', function() {
+    if (month === 12) {
+        month = 1;
+        year++;
+    } else {
+        month++;
+    }
+
+    window.location.href = `?mois=${month}&annee=${year}`;
+});
+
+// fetch('./public/assets/json/calendar-event.json')
+//     .then((response) => {
+//         console.log(response);
+//         return response.json()
+//     })
+//     .then((datas) => {
+        
+//     }
